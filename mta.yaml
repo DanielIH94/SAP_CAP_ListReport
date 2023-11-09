@@ -75,7 +75,7 @@ modules:
     build-result: dist
     builder: custom
     commands:
-    - npm install --production
+    - npm install
     - npm run build:cf
     supported-platforms: []
 resources:
@@ -134,10 +134,5 @@ build-parameters:
   before-all:
   - builder: custom
     commands:
-    - npm install -g @sap/cds-dk
-    - npm install -g mbt
-    - npm install @sap/ui5-builder-webide-extension
-    - npm install ui5-task-zipper
     - npm install --production
-    - cds build --production
-    #- npx cds build --production
+    - npx cds build --production
