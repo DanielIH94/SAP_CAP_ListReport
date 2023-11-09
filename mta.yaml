@@ -136,4 +136,5 @@ build-parameters:
     commands:
     - npm install -g mbt
     - npm install --production
-    - npx cds build --production
+    - cds build --production
+    #- npx cds build --production
