@@ -75,7 +75,6 @@ modules:
     build-result: dist
     builder: custom
     commands:
-    - npm install -g mbt
     - npm install --production
     - npm run build:cf
     supported-platforms: []
@@ -135,4 +134,5 @@ build-parameters:
   before-all:
   - builder: custom
     commands:
+    - npm install --production
     - npx cds build --production
