@@ -136,6 +136,7 @@ build-parameters:
     commands:
     - npm install -g @sap/cds-dk
     - npm install -g mbt
+    - npm clear cache --force
     - npm install --production
     - cds build --production
     #- npx cds build --production
